@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+        <section class="main-content">
+            <div class="container">
+                <div class="row">
+                    {% for n in news %}
+                    <div class="col-lg-4 col-sm-6 mb-3">
+                        <div class="card" style="width: 18rem;">
+                          <div class="card-body">
+                            <h5 class="card-title">{{n[0]}}</h5>
+                            <p class="card-text">{{n[1]}}</p>
+                          </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+
+{% endblock %}
